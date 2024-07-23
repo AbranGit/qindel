@@ -1,7 +1,5 @@
 package com.qindel.test.dto;
 
-import java.sql.Timestamp;
-
 import lombok.Data;
 import lombok.NoArgsConstructor;
 @Data
@@ -9,10 +7,9 @@ import lombok.NoArgsConstructor;
 public class PriceDTO {
 	
 	private int brandId;
-	private Timestamp fechaAplicacion;
 	private int productId;
-	private int priceList;
-	private Timestamp startDate;
-	private Timestamp endDate;
+	private Long priceList;
+	private String startDate;
+	private String endDate;
 	private double price;
 }

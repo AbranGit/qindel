@@ -1,11 +1,11 @@
 package com.qindel.test.service;
 
-import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 import com.qindel.test.dto.PriceDTO;
 
 public interface PriceService {
 	
-	public PriceDTO getPriceByDateProductIdAndBrandId(Timestamp aplicationDate, 
+	public PriceDTO getPriceByDateProductIdAndBrandId(LocalDateTime aplicationDate, 
 			int productId, int brandId) throws Exception;
 }
